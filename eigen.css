@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;500;600;700&display=swap');
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0 3rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #7743DB;
+}
+h5 {
+    margin: 0;
+    color: #FFFBF5;
+}
+
+h2 {
+    margin-top: 3rem;
+    font-size: 2rem; 
+    color: #FFFBF5;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#matrixInput {
+    margin: 0;
+    background: #F7EFE5;
+    resize: none;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px; 
+    border: #C3ACD0 solid 2px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #FF5841;
+    color: #F7EFE5;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 1rem; 
+    cursor: pointer;
+    margin-top: 1rem; 
+}
+
+button:hover {
+    background-color: #C53678;
+}
+
+button:last-child {
+    background-color: #F7EFE5;
+    color: #272727;
+    border: 1px solid;
+}
+
+button:last-child:hover {
+    background-color: #FF5841;
+    color: F7EFE5;
+}
+
+#result {
+    margin-top: 20px;
+    background: #F7EFE5;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 2rem; 
+}
+
+h3 {
+    font-size: 1.5rem; 
+    color: #272727;
+    padding-left: 10px;
+    margin: 0;
+}
+
+p {
+    padding-left: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    #matrixInput {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
