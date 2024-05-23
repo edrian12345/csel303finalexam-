@@ -8,11 +8,10 @@ function calculateEigen() {
         A.push(row);
     }
 
-    
+    // Compute eigenvalues and eigenvectors using numeric.js
     const eig = numeric.eig(A);
-    const eigenvalues = eig.lambda.x.map(value => value.toFixed(2)); 
-    const eigenvectors = eig.E.x; 
-
+    const eigenvalues = eig.lambda.x.map(value => value.toFixed(2));
+    const eigenvectors = eig.E.x;
 
     const result = document.getElementById("result");
     result.innerHTML = "<h3>Eigenvalues:</h3>";
@@ -24,6 +23,8 @@ function calculateEigen() {
         result.innerHTML += "<p>Eigenvector " + (i + 1) + ": [" + eigenvectors[i].map(e => e.toFixed(2)).join(", ") + "]</p>";
     }
 }
+
 function clearTextArea() {
-    window.location.reload();
+    document.getElementById("matrixInput").value = "";
+    document.getElementById("result").innerHTML = "";
 }
